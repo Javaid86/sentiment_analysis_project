@@ -1,0 +1,14 @@
+
+import pandas
+import numpy
+from nltk.corpus import stopwords   # to get collection of stopwords
+from sklearn.model_selection import train_test_split       # for splitting dataset
+from tensorflow.keras.preprocessing.text import Tokenizer  # to encode text to int
+from tensorflow.keras.preprocessing.sequence import pad_sequences   # to do padding or truncating
+from tensorflow.keras.models import Sequential     # the model
+from tensorflow.kerasa.layers import Embedding, LSTM, Dense # layers of the architecture
+from tensorflow.keras.callbacks import ModelCheckpoint   # save model
+from tensorflow.keras.models import load_model   # load saved model
+import re
+import nltk
+nltk.download('stopwords')
