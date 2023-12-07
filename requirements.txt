@@ -1,6 +1,6 @@
 
-import pandas
-import numpy
+import pandas as pd
+import numpy as np
 from nltk.corpus import stopwords   # to get collection of stopwords
 from sklearn.model_selection import train_test_split       # for splitting dataset
 from tensorflow.keras.preprocessing.text import Tokenizer  # to encode text to int
